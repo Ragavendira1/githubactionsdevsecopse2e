@@ -39,7 +39,6 @@ jobs:
           ref: main
       - name: ZAP Scan
         uses: zaproxy/action-baseline@v0.6.1
-        continue-on-error: true
         with:
           docker_name: 'owasp/zap2docker-stable'
           target: 'https://x-platform.expleogroup.com/'
